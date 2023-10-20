@@ -7,17 +7,6 @@ is
 y_{n+1} = y_n + 0.5h( f(t_n, y_n) + f(t_n + h, y_n + h*f(t_n,y_n) ) )
 */
 
-double function(double t, double y) 
-{ 
-    /* ANALYTIC SOLUTION: 
-    y' = 1+t-2ty
-    y = exp(-t^2)int(exp(t^2)(1+t))dt
-    */
-
-    double func_value = 1.0 + t - 2.0 * t * y;
-    return func_value;
-};
-
 int improved_euler(double (*fn) (double, double), double T_INITIAL, double Y_INITIAL, double STEP_SIZE, int STEPS)
 {
     double domain[STEPS+1], output[STEPS+1];
@@ -41,9 +30,3 @@ int improved_euler(double (*fn) (double, double), double T_INITIAL, double Y_INI
     
     return 0;
 };
-
-int main(void) 
-{
-    improved_euler(function, 0.0, 0.0, 0.01, 1000);
-    return 0;
-}; 

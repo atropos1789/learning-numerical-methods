@@ -1,16 +1,5 @@
 #include <stdio.h>    
 
-double function(double t, double y)
-{ 
-    /* ANALYTIC SOLUTION: 
-    y' = 1+t-2ty
-    y = exp(-t^2)int(exp(t^2)(1+t))dt
-    */
-
-    double func_value = 1.0 + t - 2.0 * t * y;
-    return func_value;
-};
-
 /*
 The Euler Method for approximating the solution to the IVP 
 y' = f(t,y), y(t_0) = y_0
@@ -39,11 +28,5 @@ int forward_euler(double (*fn) (double, double), double T_INITIAL, double Y_INIT
         // printf("%.17f\n", domain[i+1]);
     };
     
-    return 0;
-};
-
-int main(void)
-{
-    forward_euler(function, 0.0, 0.0, 0.01, 1000);
     return 0;
 };
