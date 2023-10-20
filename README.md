@@ -4,7 +4,6 @@ This is a repository I will be using for learning how to implement various numer
 
 The algorithms implemented will be the numerical integration schemes discussed in Chapter 8 of Differential Equations by Boyce and Diprima and Chapter 6 of Numerical Analysis by Atkinson, to solve the IVP `y' = f(t,y), y(t0) = y0`.
 
-Notationally, let `f(t_n, y_n) = f_n`
 
 
 - Euler's Method
