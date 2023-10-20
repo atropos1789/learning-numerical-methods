@@ -22,7 +22,7 @@ k2 = f( t_n + h, y_n + h * k1)
 y_n+1 = y_n + h * (1/2)( k1 + k2 )
 ```
 
-- RK4
+- Runge-Kutta Fourth Order
 
 ```
 k1 = f( t_n, y_n ) 
@@ -32,6 +32,14 @@ k4 = f( t_n + h, y_n + h * k3 )
 y_n+1 = y_n + h * (1/6)( k1 + 2 * k2 + 2 * k3 + k4)
 ```
 
-- Adams-bashforth
+- Adams-Bashforth Second Order
+
+Requires two initial points `(t0, y1)` and `(t1, y1)`. If only `(t0, y0)` is provided, a single step method such as RK4 can be used to approximate `(t1, y1)`.
+
+```
+k1 = f( t_n, y_n )
+y_n+1 = y_n + h * (1/2)(3 * k1 - f_n-1 )
+```
+
 - Adams-moulton
 - predictor-corrector
