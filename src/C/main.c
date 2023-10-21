@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "libeuler_functions.h"
 
 double function(double t, double y) 
 { 
