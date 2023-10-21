@@ -14,7 +14,8 @@ double function(double t, double y)
 
 int main(void)
 {
-    forward_euler(function, 0.0, 0.0, 0.01, 1000);
-    improved_euler(function, 0.0, 0.0, 0.01, 1000);
+    // forward_euler(function, 0.0, 0.0, 0.001, 100000);
+    // improved_euler(function, 0.0, 0.0, 0.001, 100000);
+    runge_kutta(function, 0.0, 0.0, 0.001, 1000);
     return 0;
 };
