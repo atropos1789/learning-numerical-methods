@@ -1,6 +1,6 @@
 # project directories
-bin/*/*
-obj/*/*
+C/bin/*
+C/obj/*
 
 # file extensions (backup)
 # based on https://github.com/github/gitignore/blob/main/C.gitignore
