@@ -1,6 +1,6 @@
 # learning-numerical-methods
 
-This is a repository I will be using for learning how to implement various numerical schemes using C, C++, and Fortran.
+This is a repository I will be using for learning how to implement various numerical schemes in a variety of programming languages, including Python, Julia, C, Fortran, and Matlab.
 
 The algorithms implemented will be the numerical integration schemes discussed in Chapter 8 of Differential Equations by Boyce and Diprima and Chapter 6 of Numerical Analysis by Atkinson, to solve the IVP `y' = f(t,y), y(t0) = y0`.
 
