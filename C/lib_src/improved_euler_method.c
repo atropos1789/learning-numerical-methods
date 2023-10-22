@@ -23,7 +23,7 @@ int improved_euler(double (*fn) (double, double), double T_INITIAL, double Y_INI
     for ( int i = 0; i < STEPS; i++)
     {
         double k1 = fn(domain[i], output[i]);
-        double k2 = fn(domain[i+1], output[i] + STEP_SIZE*k1);
+        double k2 = fn(domain[i] + STEP_SIZE, output[i] + STEP_SIZE*k1);
         output[i+1] = output[i] + 0.5*STEP_SIZE*(k1 + k2);
         printf("(%.17f , %.17f)\n", domain[i+1], output[i+1]);
     };
